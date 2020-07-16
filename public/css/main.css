@@ -136,7 +136,71 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/** Services Section */
+/* about section */
+.about {
+  background: url("../img/backdrop.jpeg") no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 55px 0;
+}
+
+.about .container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 100px;
+}
+
+.about .container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.about .container .about-text {
+  font-size: 13px;
+  color: gray;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.about .container .skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about .container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+
+  .about .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 0;
+  }
+
+  .about .container {
+    padding: 60px;
+  }
+}
+
+/** services Section */
 .services {
   text-align: center;
 }
@@ -150,7 +214,7 @@ nav {
   margin-top: 40px;
 }
 
-.service-container {
+.services .container {
   max-width: 1200px;
   margin: auto;
   overflow: hidden;

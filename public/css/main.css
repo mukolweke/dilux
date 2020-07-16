@@ -300,3 +300,18 @@ nav {
     font-size: 10px;
   }
 }
+
+/* footer section */
+.footer {
+  text-align: center;
+  /* height: 10vh; */
+  padding: 20px;
+  color: gray;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer .designer {
+  text-transform: uppercase;
+  font-weight: 700;
+}

@@ -24,16 +24,16 @@
 
 <body>
   <!-- Nav section -->
-  <nav class="shadow">
+  <nav class="header shadow">
     <div class="logo">
       <img src="./img/logo.png" alt="Dilux Engineering Company">
     </div>
 
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home-section">Home</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#service-seaction">Services</a></li>
+      <li><a href="#contact-section">Contact</a></li>
     </ul>
 
     <div class="burger">
@@ -44,114 +44,134 @@
 
   </nav>
 
-  <!-- about section -->
-  <div class="about">
-    <div class="container">
-      <h1>About Us</h1>
+  <div class="main">
+    <!-- home section -->
+    <div class="home" id="home-section">
+      <div class="home-container">
+        <div class="content">
+          <h1>Hi, i'm an Engineer</h1>
 
-      <p class="about-text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsum deserunt ratione impedit nesciunt
-        molestiae similique itaque totam aliquid tempore nihil vero eaque eveniet dolorem, iste quia quo voluptatibus.
-      </p>
+          <div class="sm">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
 
-      <div class="skills">
-        <span>Electician</span>
-        <span>Handy Man</span>
-        <span>Karate Blue Belt</span>
+          <div class="buttons">
+            <a href="#service-section">Explore our services</a>
+          </div>
+        </div>
+      </div>
+      <div class="home-overlay"></div>
+    </div>
+
+    <!-- services sections -->
+    <div class="services shadow" id="service-section">
+      <h1>Our Services</h1>
+
+      <div class="container">
+        <div class="service-panel">
+          <i class="fas fa-wifi"></i>
+          <h2>WiFi Installation</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service-panel">
+          <i class="fas fa-cogs"></i>
+          <h2>All Rounded Handy-Man</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service-panel">
+          <i class="fas fa-solar-panel"></i>
+          <h2>Solar Installation</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service-panel">
+          <i class="fas fa-wrench"></i>
+          <h2>Plumbing</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service-panel">
+          <i class="fas fa-sign"></i>
+          <h2>LED, Panel Display Signs</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service-panel">
+          <i class="fas fa-bolt"></i>
+          <h2>Electrical Installation</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service-panel">
+          <i class="fas fa-camera"></i>
+          <h2>CCTV Installation</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service-panel">
+          <i class="fas fa-network-wired"></i>
+          <h2>Network Installation</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+
       </div>
     </div>
-  </div>
 
-  <!-- services sections -->
-  <div class="services shadow">
-    <h1>Our Services</h1>
+    <!-- about section -->
+    <div class="about shadow" id="about-section">
+      <div class="container">
+        <h1>About Us</h1>
 
-    <div class="container">
-      <div class="service-panel">
-        <i class="fas fa-wifi"></i>
-        <h2>WiFi Installation</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
+        <p class="about-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsum deserunt ratione impedit nesciunt
+          molestiae similique itaque totam aliquid tempore nihil vero eaque eveniet dolorem, iste quia quo voluptatibus.
+        </p>
 
-      <div class="service-panel">
-        <i class="fas fa-cogs"></i>
-        <h2>All Rounded Handy-Man</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-
-      <div class="service-panel">
-        <i class="fas fa-solar-panel"></i>
-        <h2>Solar Installation</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-
-      <div class="service-panel">
-        <i class="fas fa-wrench"></i>
-        <h2>Plumbing</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-
-      <div class="service-panel">
-        <i class="fas fa-sign"></i>
-        <h2>LED, Panel Display Signs</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-
-      <div class="service-panel">
-        <i class="fas fa-bolt"></i>
-        <h2>Electrical Installation</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-
-      <div class="service-panel">
-        <i class="fas fa-camera"></i>
-        <h2>CCTV Installation</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-
-      <div class="service-panel">
-        <i class="fas fa-network-wired"></i>
-        <h2>Network Installation</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-
-
-    </div>
-  </div>
-
-  <!-- contact section -->
-  <div class="contact shadow">
-    <h1>Contact Info</h1>
-
-    <p class="salutation">For inquiries or just to say hi,</p>
-
-    <div class="contact-info">
-      <div class="card">
-        <i class="card-icon fas fa-phone-alt"></i>
-        <p>0110 048 419 / 0725 712 252</p>
-      </div>
-
-      <div class="card">
-        <i class="card-icon fas fa-envelope"></i>
-        <p class="email">diluxengineeringcompany@gmail.com</p>
-      </div>
-
-      <div class="card">
-        <i class="card-icon fas fa-map-marker-alt"></i>
-        <p>Roysambu, Nairobi, Kenya</p>
+        <div class="skills">
+          <span>Electician</span>
+          <span>Handy Man</span>
+          <span>Karate Blue Belt</span>
+        </div>
       </div>
     </div>
+
+    <!-- contact section -->
+    <div class="contact shadow" id="contact-section">
+      <h1>Contact Info</h1>
+
+      <p class="salutation">For inquiries or just to say hi,</p>
+
+      <div class="contact-info">
+        <div class="card">
+          <i class="card-icon fas fa-phone-alt"></i>
+          <p>0110 048 419 / 0725 712 252</p>
+        </div>
+
+        <div class="card">
+          <i class="card-icon fas fa-envelope"></i>
+          <p class="email">diluxengineeringcompany@gmail.com</p>
+        </div>
+
+        <div class="card">
+          <i class="card-icon fas fa-map-marker-alt"></i>
+          <p>Roysambu, Nairobi, Kenya</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer">
+      <span>&#169; 2020 Dilux Engineering Company .</span>
+      <span>All Rights Reserved . </span>
+      <span>Designed by <span class="designer">MukolweSofts</span></span>
+      </ul>
+    </div>
   </div>
-
-  <!-- footer section -->
-  <div class="footer">
-    <span>&#169; 2020 Dilux Engineering Company .</span>
-    <span>All Rights Reserved . </span>
-    <span>Designed by <span class="designer">MukolweSofts</span></span>
-    </ul>
-  </div>
-
-
 
   <script src="./js/main.js"></script>
 </body>

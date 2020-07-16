@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #5D4954;
-  --text-color: #5D4954;
+  --bg-color: #5d4954;
+  --text-color: #5d4954;
   --white-fade-color: rgba(226, 226, 226);
 }
 
@@ -8,7 +8,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+.shadow {
+  -moz-box-shadow: 0 8px 6px -6px #ccc;
+  -webkit-box-shadow: 0 8px 6px -6px #ccc;
+  box-shadow: 0 8px 6px -6px #ccc;
 }
 
 nav {
@@ -19,7 +29,7 @@ nav {
   /* background-color: var(--bg-color); */
 }
 
-.nav-shadow {
+.shadow {
   -moz-box-shadow: 0 8px 6px -6px #ccc;
   -webkit-box-shadow: 0 8px 6px -6px #ccc;
   box-shadow: 0 8px 6px -6px #ccc;
@@ -51,7 +61,6 @@ nav {
   font-size: 14px;
 }
 
-
 .burger {
   display: none;
   cursor: pointer;
@@ -64,7 +73,6 @@ nav {
   margin: 5px;
   transition: all 0.5s ease;
 }
-
 
 @media screen and (max-width: 1024px) {
   .nav-links {
@@ -130,7 +138,6 @@ nav {
 
 /** Services Section */
 .services {
-  background: #f1f1f1;
   text-align: center;
 }
 
@@ -192,5 +199,104 @@ nav {
 @media screen and (max-width: 500px) {
   .service-panel {
     width: 100%;
+  }
+}
+
+/** Contact section */
+.contact {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.contact h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid var(--text-color);
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+
+.contact p.salutation {
+  margin: 40px 0;
+  color: gray;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.contact-info .card {
+  background: var(--bg-color);
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-fade-color);
+  cursor: pointer;
+}
+
+.contact-info .card-icon {
+  font-size: 28px;
+  background: #ff6348;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.contact-info .card:hover .card-icon {
+  background: none;
+  color: #ff6348;
+  transform: scale(1.6);
+}
+
+.contact-info .card p {
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.contact-info .card p.email {
+  font-size: 14px;
+}
+
+.contact-info .card:hover p {
+  max-height: 40px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-info .card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  .contact-info .card p {
+    font-size: 15px;
+  }
+
+  .contact-info .card p.email {
+    font-size: 10px;
   }
 }

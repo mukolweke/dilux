@@ -275,6 +275,11 @@ nav {
   padding: 30px 0;
 }
 
+.service-tag {
+  margin-top: 40px;
+  color: gray;
+}
+
 .services h1 {
   display: inline-block;
   text-transform: uppercase;
@@ -434,6 +439,124 @@ nav {
     font-size: 10px;
   }
 }
+
+/* testimonial section */
+.testimonial {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+  padding: 100px;
+}
+
+.testimonial-panel {
+  position: relative;
+  padding: 80px 40px 40px;
+  transition: 0.5s;
+  text-align: center;
+  background: #fff;
+}
+
+.testimonial-panel:hover {
+  color: var(--white-fade-color);
+  background: var(--bg-color);
+}
+
+.testimonial-panel p {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.testimonial-panel h4 {
+  margin: 20px 0 0;
+  padding: 0;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.testimonial-panel h4 span {
+  font-weight: 600;
+  font-size: 14px;
+  transition: .5s;
+}
+
+.testimonial-panel:hover p,
+.testimonial-panel:hover h4,
+.testimonial-panel:hover h4 span {
+  color: var(--white-fade-color);
+}
+
+.testimonial-img {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.testimonial-panel::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
+  background: url(../img/quote.png);
+  background-size: cover;
+  opacity: .05;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.testimonial-panel:hover::before {
+  transform: translateY(-60px);
+  opacity: 1;
+}
+
+.testimonial-panel::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+  width: 80px;
+  height: 80px;
+  background: url(../img/quote.png);
+  background-size: cover;
+  opacity: .05;
+  pointer-events: none;
+  transition: .5s;
+  transform: rotate(180deg) translateY(0);
+}
+
+.testimonial-panel:hover::after {
+  transform: rotate(180deg) translateY(-60px);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .testimonial-panel {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .testimonial {
+    padding: 16px;
+  }
+}
+
 
 /* footer section */
 .footer {

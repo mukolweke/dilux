@@ -192,6 +192,10 @@ nav {
   margin-right: 50px;
 }
 
+.home-container .content .sm a:hover {
+  color: #ff6348;
+}
+
 .home-container .content .buttons a {
   padding: 10px;
   border-radius: 3px;
@@ -294,11 +298,14 @@ nav {
   margin: auto;
   overflow: hidden;
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
 }
 
 .service-panel {
   display: inline-block;
-  width: calc(100% / 4);
+  /* width: calc(100% / 4); */
   margin: 0 -2px;
   padding: 20px;
   box-sizing: border-box;
@@ -327,6 +334,7 @@ nav {
   color: gray;
   font-size: 15px;
   font-weight: 500;
+  text-align: left;
 }
 
 @media screen and (max-width: 900px) {

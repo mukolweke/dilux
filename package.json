@@ -13,6 +13,7 @@
     "autoprefixer": "^9.8.5",
     "npm-upgrade": "^2.0.3",
     "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "vue": "^2.6.12"
   }
 }
